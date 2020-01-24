@@ -2,7 +2,15 @@ var count = function(number) {
 	var fullCount = "0";
 	console.log(fullCount);
 	for ( var index = 1; index <= number; index +=1)	{
-		fullCount = (fullCount + ", " + index);
+		if (index === 1) {
+			fullCount = (fullCount + ", " + "'Beep!'");
+		} else if (index === 2) {
+			fullCount = (fullCount + ", " + "'Boop!'");
+		} else if (index === 3) {
+			fullCount = (fullCount + ", " + "'I'm sorry, Dave. I'm afraid I can't do that.'");
+		} else {
+			fullCount = (fullCount + ", " + index);
+		}
 	};
 	return fullCount;
 };

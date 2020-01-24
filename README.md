@@ -12,21 +12,13 @@ A website created with JavaScript, CSS and HTML where a user enters a number and
 * Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that."
 
 
-<!-- ### Specs
+### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **A sentence with ranging cases** | bOT | otBay |
-| **1 word, 1 vowel** | pig | Output: igPay |
-| **Multiple consanants, 1 vowel**| ship | Output: ipShay |
-| **2 vowels**| zebra | ebraZay|
-| **vowels start** | egg | eggWay|
-| **2 vowels start**| each | eachWay |
-| **starts w. qu** | squeak | ickQuay |
-|**qu as first vowel**| squeak | ueakSquy |
-|**any number**| 26 | false |
-|**starts w/ symbol**| *pig | false |
-|**Includes symbol not at start**| hi! | i!Hay |
-|**If ends with "!" or "?"**| hi? | iHay? | -->
+| **Program counts from zero to user input** | 4 | 0, 1, 2, 3, 4 |
+| **Replaces all 1's with beep, all 2's with boop, and all 3's with "I'm sorry, Dave..."** | 4 | 0, 'Beep!', 'Boop!', 'I'm sorry, Dave...', 4 |
+| **Searches multidigit numbers in the count to see if it contains a 1 and also replaces **| 41 | ...40, 'Beep!'...|
+
 
 ## Setup/Installation Requirements
 
