@@ -17,8 +17,8 @@ $(document).ready(function()	{
 		event.preventDefault();
 
 		var userNumber = $("input#numberIn").val();
-		count(userNumber);
-		
+		var beepBoopCount = count(userNumber);
+		$("#beepBoopCount").text(beepBoopCount);
 		
 
 	});
