@@ -13,28 +13,20 @@ var replaceOneTwoThree = function (number) {
 		};
 	};
 
-
-
-	// var findThree = function(number) {
-	// 	var numberArray = number.split("");
-	// 	console.log(numberArray);
-	// 	numberArray.forEach(function(digit)	{
-	// 		if (digit = "3") {
-	// 			console.log("This string has a 3");
-	// 		} else {
-	// 			console.log("this is NOT a 3");
-	// 		}
-	// 	})
-	// }
-
-
-
-var replacement = "words?!*!"
+var findOneTwoThree = function(number) {
+	var numberArray = number.split(""); 
+	for (var index = 0; index <= (numberArray.length-1) ; index += 1)	{
+		if (numberArray[index] === "3" | numberArray[index] === "2" | numberArray[index] === "1"){
+			return true;
+		} else {
+		}
+	};
+};
 
 var count = function(number) {
 	var fullCount = "0";
 	for ( var index = 1; index <= number; index +=1)	{
-		if (index === 1 | index === 2 | index === 3) {
+		if (findOneTwoThree(number) === true) {
 			fullCount = (fullCount + ", " + replacementWord);
 		} else {
 			fullCount = (fullCount + ", " + index);
@@ -49,11 +41,10 @@ $(document).ready(function()	{
 		event.preventDefault();
 
 		var userNumber = $("input#numberIn").val();
-		replaceOneTwoThree(userNumber);
+		// replaceOneTwoThree(userNumber);
+		var testing = findOneTwoThree(userNumber);
+		alert(testing);
 		var beepBoopCount = count(userNumber);
 		$("#beepBoopCount").text(beepBoopCount);
-		
-		
-
 	});
 });
