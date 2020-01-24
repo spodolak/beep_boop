@@ -14,9 +14,8 @@
 // 	};
 
 var findOneTwoThree = function(number) {
-	strNumber = number.toString();
-	console.log(strNumber);
-	var numberArray = number.split(""); 
+	var numberString = number.toString();
+	var numberArray = numberString.split(""); 
 	for (var index = 0; index <= (numberArray.length-1) ; index += 1)	{
 		if (numberArray[index] === "3" | numberArray[index] === "2" | numberArray[index] === "1"){
 			// alert(true);
@@ -27,17 +26,17 @@ var findOneTwoThree = function(number) {
 	};
 };
 
+var replacementWord = "*HUKI%!";
 var count = function(number) {
-	
 	var fullCount = "0";
 	for ( var index = 1; index <= number; index +=1)	{
-		if (findOneTwoThree(number) === true) {
+		if (findOneTwoThree(index) === true) {
 			fullCount = (fullCount + ", " + replacementWord)
 		} else {
 			fullCount = (fullCount + ", " + index);
 		}		
-		number = (number + 1);
 	};
+	console.log(findOneTwoThree(index));
 	return fullCount;
 };
 
