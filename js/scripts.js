@@ -4,18 +4,17 @@ var replaceOneTwoThree = function (number) {
 	var numberString = number.toString();
 	var numberArray = numberString.split("");
 	for (var index = 0; index <= (numberArray.length-1) ; index += 1) {
-		console.log(numberArray[index]);
 		if (numberArray[index] === "3") {
 			return "'I'm sorry, Dave. I'm afraid I can't do that.'";
-		} else if (numberArray[index] === "2") {
+		} else if ((numberArray[index] === "2") && (numberArray.indexOf("3") === -1)) {
 			return replacementWord = "'Boop!'";
-		} else if (numberArray[index] === "1") {
+		} else if ((numberArray[index] === "1") && (numberArray.indexOf("3") === -1) && (numberArray.indexOf("2") === -1)) {
 			return replacementWord = "'Beep!'";
 		} else {
 		}
 	};
 };
-console.log(replacementWord);
+
 var findOneTwoThree = function(number) {
 	var numberString = number.toString();
 	var numberArray = numberString.split(""); 
