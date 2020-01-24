@@ -1,5 +1,6 @@
 //Business Logic
-var replacementWord = ""; 
+
+//Function takes numbers containing digits 1, 2 or 3 and replaces them with phrases, and prioitizes numbers with multiple significant digits in decending order (3>2>1).
 var replaceOneTwoThree = function (number) {
 	var numberString = number.toString();
 	var numberArray = numberString.split("");
@@ -7,14 +8,15 @@ var replaceOneTwoThree = function (number) {
 		if (numberArray[index] === "3") {
 			return "'I'm sorry, Dave. I'm afraid I can't do that.'";
 		} else if ((numberArray[index] === "2") && (numberArray.indexOf("3") === -1)) {
-			return replacementWord = "'Boop!'";
+			return "'Boop!'";
 		} else if ((numberArray[index] === "1") && (numberArray.indexOf("3") === -1) && (numberArray.indexOf("2") === -1)) {
-			return replacementWord = "'Beep!'";
+			return "'Beep!'";
 		} else {
 		}
 	};
 };
 
+//Function searches each number of the count to see if it contains digits 1, 2, or 3.
 var findOneTwoThree = function(number) {
 	var numberString = number.toString();
 	var numberArray = numberString.split(""); 
@@ -26,6 +28,7 @@ var findOneTwoThree = function(number) {
 	};
 };
 
+//Function counts from zero up to the number value of the user input
 var count = function(number) {
 	var fullCount = "0";
 	for ( var index = 1; index <= number; index +=1)	{
