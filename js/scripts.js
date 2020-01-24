@@ -1,19 +1,35 @@
-var findOneTwoThree = function (number) {
+var replaceOneTwoThree = function (number) {
 	var numberArray = number.split("");
 	for (var index = 0; index <= (numberArray.length-1) ; index += 1) {
-		console.log(numberArray[index]);
 		if (numberArray[index] === "3") {
-			console.log("Stop here! 3s ar most important");
+			return "3";
 		} else if (numberArray[index] === "2") {
-			console.log("Stop here! 2's are only important half the time");
+			numberArray.forEach(function(digit)	{
+				if (digit === "3") {
+					console.log("I found a 3");
+					return "3";
+				} else {
+					console.log("I found a 2");
+					return "2";
+				}
+			});
 		} else if (numberArray[index] === "1") {
-			console.log("STop here! unless you have a 3 or 2");
 		} else {
-			return;
 		}
 		};
 	};
 
+	var findThree = function(number) {
+		var numberArray = number.split("");
+		console.log(numberArray);
+		numberArray.forEach(function(digit)	{
+			if (digit = "3") {
+				console.log("This string has a 3");
+			} else {
+				console.log("this is NOT a 3");
+			}
+		})
+	}
 
 
 
@@ -40,7 +56,7 @@ $(document).ready(function()	{
 		event.preventDefault();
 
 		var userNumber = $("input#numberIn").val();
-		findOneTwoThree(userNumber);
+		findThree(userNumber);
 		var beepBoopCount = count(userNumber);
 		$("#beepBoopCount").text(beepBoopCount);
 		
