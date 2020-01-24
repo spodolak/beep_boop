@@ -12,7 +12,7 @@ A website created with JavaScript, CSS and HTML where a user enters a number and
 * Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that."
 
 
-### Specs
+<!-- ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **A sentence with ranging cases** | bOT | otBay |
@@ -26,7 +26,8 @@ A website created with JavaScript, CSS and HTML where a user enters a number and
 |**any number**| 26 | false |
 |**starts w/ symbol**| *pig | false |
 |**Includes symbol not at start**| hi! | i!Hay |
-|**If ends with "!" or "?"**| hi? | iHay? |
+|**If ends with "!" or "?"**| hi? | iHay? | -->
+
 ## Setup/Installation Requirements
 
 1. Clone this repository to your desktop. If using git bash you can do this by typing "git clone https://github.com/spodolak/beep_boop.git" into your command line while in desktop directory.
