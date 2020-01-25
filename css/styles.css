@@ -1,0 +1,22 @@
+body {
+	background-image: url("https://www.throwbacks.com/content/images/2017/05/e60841242a33409f6ad99f7b79cc2c92-1.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+
+}
+
+.container {
+	background: rgba(255, 255, 255, 0.7);
+	text-align: center;
+	font-family: 'Source Code Pro', monospace;
+	padding: 1000;
+}
+
+h1 {
+	color: red;
+}
+
+#beep-boop-form {
+    
+}
