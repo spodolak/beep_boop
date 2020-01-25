@@ -1,6 +1,6 @@
 //Business Logic
 
-//Function takes numbers containing digits 1, 2 or 3 and replaces them with phrases, and prioitizes numbers with multiple significant digits in decending order (3>2>1).
+//Function takes numbers containing digits 3, 2, or 1 in priority order and replaces them with phrases.
 var replaceOneTwoThree = function (number) {
 	var numberString = number.toString();
 	var numberArray = numberString.split("");
