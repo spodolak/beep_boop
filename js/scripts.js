@@ -60,6 +60,6 @@ var countToNumber = function(number) {
 $(document).ready(function()	{
 	$("form#beep-boop-form").submit(function()	{
 		event.preventDefault();
-		$("#beepBoopCount").text(countToNumber(parseInt($("input#numberIn").val())));
+		$("#beepBoopCount").text(countToNumber($("input#numberIn").val()));
 	});
 });
