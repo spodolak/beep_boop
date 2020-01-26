@@ -19,13 +19,16 @@ var replaceOneTwoThree = function (number) {
 var findOneTwoThree = function(number) {
 	var numberArray = number.toString().split(""); 
 	for (var index = 0; index <= (numberArray.length-1) ; index += 1)	{
-		if (numberArray[index] === "3" | numberArray[index] === "2" | numberArray[index] === "1")	{
+		if (isNaN(number) === true)	{
+			return true; 
+		}	else if (numberArray[index] === "3" | numberArray[index] === "2" | numberArray[index] === "1")	{
 			return true;
 		} else { 
 		}
 	};
 };
 
+//Function searches each user input for non number characters.
 var findNonNumbers = function(number)	{
 	var numberArray = number.toString().split(""); 
 	for (var index = 0; index <= (numberArray.length-1) ; index += 1) {
